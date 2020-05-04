@@ -6,10 +6,10 @@
 
 </h4>
 
-<div  align="center">
+<p  align="center">
 [![GitHub stars](https://img.shields.io/github/stars/finotilucas/FCoin)](https://github.com/finotilucas/FCoin/stargazers) [![GitHub forks](https://img.shields.io/github/forks/finotilucas/FCoin)](https://github.com/finotilucas/FCoin/network) [![GitHub license](https://img.shields.io/github/license/finotilucas/FCoin)](https://github.com/finotilucas/FCoin/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/finotilucas/FCoin)](https://github.com/finotilucas/FCoin/issues)
 
-</div>
+</p>
 
 
 ---
