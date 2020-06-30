@@ -2,10 +2,6 @@ const crypto = require('crypto');
 const EC = require('elliptic').ec;
 const ec = new EC('secp256k1');
 
-const { Bloc } = require('./block');
-const { Blockchain } = require('./blockchain');
-
-
 class Transaction {
     /**
      * @param {string} fromAddress

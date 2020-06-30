@@ -19,7 +19,6 @@
 ## Future Implementations
 
 * Build a graphical interface for display the blockchain in VueJs
-* Fix the circular dependency problem
 
 ## Result of the Blockchain
 

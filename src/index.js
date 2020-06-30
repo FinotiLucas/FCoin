@@ -23,4 +23,6 @@ console.log('\n Starting the miner...');
 
 fCoin.minePendingTransactions(myWalletAddress);
 
-console.log('\n you have', fCoin.getBalanceOfAddress(myWalletAddress));
+//console.log('\n you have', fCoin.getBalanceOfAddress(myWalletAddress));
+
+console.log(fCoin.chain);
