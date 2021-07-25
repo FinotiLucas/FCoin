@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>fcoin</title>
+	<meta name="description" content="Documentation for fcoin">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">fcoin</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>fcoin</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h4  align="center">
+					<p><img  src="./assets/logo.png"  width="250px"  /><br></p>
+					<p><b>FCoin a simple blockchain example</b> </p>
+				</h4>
+				<hr>
+				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+					<h2>Features</h2>
+				</a>
+				<ul>
+					<li>Proof-of-work algorithm</li>
+					<li>Verify blockchain (to prevent tampering)</li>
+					<li>Generate wallet (private/public key)</li>
+					<li>Sign transactions</li>
+					<li>Increase in mining difficulty</li>
+				</ul>
+				<a href="#future-implementations" id="future-implementations" style="color: inherit; text-decoration: none;">
+					<h2>Future Implementations</h2>
+				</a>
+				<ul>
+					<li>Build a graphical interface for display the blockchain in VueJs</li>
+				</ul>
+				<a href="#result-of-the-blockchain" id="result-of-the-blockchain" style="color: inherit; text-decoration: none;">
+					<h2>Result of the Blockchain</h2>
+				</a>
+				<pre><code class="language-javascript"><span style="color: #000000">[</span>
+<span style="color: #000000">  </span><span style="color: #001080">Block</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">/**</span>
+<span style="color: #008000">    *   This block is the Genesis Block !</span>
+<span style="color: #008000">    **/</span>
+<span style="color: #000000">    </span><span style="color: #001080">previousHash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;0&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">timestamp:</span><span style="color: #000000"> </span><span style="color: #0000FF">NaN</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">transactions:</span><span style="color: #000000"> [],</span>
+<span style="color: #000000">    </span><span style="color: #001080">nonce:</span><span style="color: #000000"> </span><span style="color: #098658">0</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">hash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ca908384d2d7596cfa56df2995d7a428cce36ff86dee254f6f9ee769f6cd9590&#039;</span>
+<span style="color: #000000">  },</span>
+<span style="color: #000000">  </span><span style="color: #001080">Block</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">previousHash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;ca908384d2d7596cfa56df2995d7a428cce36ff86dee254f6f9ee769f6cd9590&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">timestamp:</span><span style="color: #000000"> </span><span style="color: #098658">1588629030482</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">transactions:</span><span style="color: #000000"> [ [</span><span style="color: #001080">Transaction</span><span style="color: #000000">], [</span><span style="color: #001080">Transaction</span><span style="color: #000000">] ],</span>
+<span style="color: #000000">    </span><span style="color: #001080">nonce:</span><span style="color: #000000"> </span><span style="color: #098658">21</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">hash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;0005b9d4b65bf98b6516f1914c679d89efe9e006996f3dcb8955087901da05a2&#039;</span>
+<span style="color: #000000">  },</span>
+<span style="color: #000000">  </span><span style="color: #001080">Block</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">previousHash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;0005b9d4b65bf98b6516f1914c679d89efe9e006996f3dcb8955087901da05a2&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">timestamp:</span><span style="color: #000000"> </span><span style="color: #098658">1588629030494</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">transactions:</span><span style="color: #000000"> [ [</span><span style="color: #001080">Transaction</span><span style="color: #000000">], [</span><span style="color: #001080">Transaction</span><span style="color: #000000">], [</span><span style="color: #001080">Transaction</span><span style="color: #000000">] ],</span>
+<span style="color: #000000">    </span><span style="color: #001080">nonce:</span><span style="color: #000000"> </span><span style="color: #098658">200</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">hash:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;00261361b491f334b8a60db69984d011b4886c95aa8129d2d13deecd50b4f152&#039;</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">]</span>
+</code></pre>
+				<a href="#👍-contribution" id="👍-contribution" style="color: inherit; text-decoration: none;">
+					<h2>👍 Contribution</h2>
+				</a>
+				<p>Want to contribute? Great!</p>
+				<ol>
+					<li>Fork it</li>
+					<li>Create your feature branch (git checkout -b my-new-feature)</li>
+					<li>Commit your changes (git commit -m &#39;Add some feature&#39;)</li>
+					<li>Push to the branch (git push origin my-new-feature)</li>
+					<li>Create new Pull Request</li>
+				</ol>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h3>License</h3>
+				</a>
+				<hr>
+				<p>MIT License</p>
+				<p>Copyright (c) 2020 Lucas Finoti</p>
+				<p><a href="https://github.com/FinotiLucas/FCoin/blob/master/LICENSE">See more about the license</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
