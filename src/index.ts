@@ -9,18 +9,23 @@ const ec = new EC("secp256k1");
 const fCoin = new Blockchain();
 
 for (let i = 0; i < 100; i++) {
-  // Your private key goes here
   const privateKey = new Keygenerator();
   const myKey = ec.keyFromPrivate(privateKey.privateKey());
-  // From that we can calculate your public key (which doubles as your wallet address)
   const myWalletAddress = myKey.getPublic("hex");
+  const value: number = Math.floor(Math.random() * 1000000 + 1);
 
-  // Create new instance of Blockchain class
+  const tx1 = new Transaction(
+    myWalletAddress,
+    ec.genKeyPair().getPublic("hex"),
+    value
+  );
 
-  // Create a transaction & sign it with your key
-  const tx1 = new Transaction(myWalletAddress, "address2", 55);
   tx1.signTransaction(myKey);
-  fCoin.addTransaction(tx1);
+
+  for (let i = 0; i < Math.floor(Math.random() * 10 + 1); i++) {
+    fCoin.addTransaction(tx1);
+  }
+
   fCoin.minePendingTransactions(myWalletAddress);
 }
 

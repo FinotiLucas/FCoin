@@ -55,7 +55,7 @@ class Blockchain {
     );
     block.mineBlock(this.difficulty);
 
-    console.log("Block successfully mined!");
+    // console.log("Block successfully mined!");
     this.chain.push(block);
 
     this.pendingTransactions = [];
@@ -90,7 +90,7 @@ class Blockchain {
       */
 
     this.pendingTransactions.push(transaction);
-    console.log("transaction added: %s", transaction);
+    // console.log("transaction added: %s", transaction);
   }
 
   /**
@@ -115,7 +115,7 @@ class Blockchain {
       }
     }
 
-    console.log("getBalanceOfAdrees: %s", balance);
+    // console.log("getBalanceOfAdrees: %s", balance);
     return balance;
   }
 
@@ -137,7 +137,7 @@ class Blockchain {
       }
     }
 
-    console.log("get transactions for wallet count: %s", txs.length);
+    // console.log("get transactions for wallet count: %s", txs.length);
     return txs;
   }
 
